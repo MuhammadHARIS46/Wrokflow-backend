@@ -46,7 +46,7 @@ exports.EmployeeSignup = async (req, res) => {
     });
     const authtoken = jwt.sign(
       { email: result.email, id: result._id },
-      process.env.JWT_SECRET,
+      "Harryisagoodb$oy",
       {
         expiresIn: "10h",
       }

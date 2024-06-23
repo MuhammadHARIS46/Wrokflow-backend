@@ -1,7 +1,7 @@
 // firebaseAdmin.js
 const admin = require('firebase-admin');
 
-const serviceAccount = require('./sindh-revenue-board-firebase-adminsdk.json'); 
+const serviceAccount = require('./sindh.json'); 
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)

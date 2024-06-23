@@ -71,7 +71,7 @@ exports.AdminSignup = async (req, res) => {
     });
     const authtoken = jwt.sign(
       { email: result.email, id: result._id, role: result.role },
-      process.env.JWT_SECRET,
+      "Harryisagoodb$oy",
       {
         expiresIn: "10h",
       }
