@@ -5,7 +5,7 @@ const seeders = require("./seeders/index");
 const MongoURI = process.env.MONGODB_URI;
 
 const connectToMongo = () => {
-  mongoose.connect("mongodb+srv://muhammadhariskuk123:oVDIpopxOeAfuO0G@cluster0.auoni2m.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
+  mongoose.connect(MongoURI);
 
   const db = mongoose.connection;
 
